@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+red='\033[0;31m'
+green='\033[0;32m'
+yellow='\033[0;33m'
+no_color='\033[0m'
+
+echo -e "\n${yellow}Executing pre-commit hook...${no_color}\n"
+FILES_PATTERN='\.(js)(\..+)?$'
+FORBIDDEN='console\.[clear|dir|log|info|warn|error]'
+
+npx lint-staged
