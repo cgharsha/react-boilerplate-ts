@@ -1,11 +1,11 @@
 {
-	"extends": "./tsconfig.json",
-	"include": [
-		"src/**/*.ts",
-		"src/**/*.tsx",
-		"src/**/*.js",
-		"test/**/*.ts",
-		"test/**/*.tsx",
-		".eslintrc.js"
-	]
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.js",
+    "test/**/*.ts",
+    "test/**/*.tsx",
+    ".eslintrc.js"
+  ]
 }
